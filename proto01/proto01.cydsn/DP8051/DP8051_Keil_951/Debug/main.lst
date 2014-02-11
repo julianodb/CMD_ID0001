@@ -1,0 +1,211 @@
+C51 COMPILER V9.51   MAIN                                                                  02/11/2014 14:11:27 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\DP8051\DP8051_Keil_951\Debug\main.obj
+COMPILER INVOKED BY: C:\Program Files\Cypress\PSoC Creator\3.0\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe .\main
+                    -.c NOIV LARGE MODDP2 OMF2 VB(1) PR(.\DP8051\DP8051_Keil_951\Debug\main.lst) CD DB NOIP OT(2,SIZE) DF(DEBUG) INCDIR(.,.\G
+                    -enerated_Source\PSoC3) OJ(.\DP8051\DP8051_Keil_951\Debug\main.obj)
+
+line level    source
+
+   1          /* ========================================
+   2           *
+   3           * Copyright YOUR COMPANY, THE YEAR
+   4           * All Rights Reserved
+   5           * UNPUBLISHED, LICENSED SOFTWARE.
+   6           *
+   7           * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8           * WHICH IS THE PROPERTY OF your company.
+   9           *
+  10           * ========================================
+  11          */
+  12          #include <project.h>
+  13          
+  14          CY_ISR_PROTO(ADC_DAC_Transfer);
+  15          
+  16          int main()
+  17          {
+  18   1          
+  19   1          uint8 initCounter = 5;
+  20   1          /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  21   1          PGA_1_Start();
+  22   1          VDAC8_1_Start();
+  23   1          VDAC8_2_Start();
+  24   1          ADC_DelSig_1_Start();
+  25   1          
+  26   1          isr_1_StartEx(ADC_DAC_Transfer);
+  27   1          
+  28   1          
+  29   1          while(initCounter>0)
+  30   1          {
+  31   2              VDAC8_1_SetValue(200);
+  32   2              CyDelay(1000);
+  33   2              VDAC8_1_SetValue(0);
+  34   2              CyDelay(1000);
+  35   2              initCounter--;
+  36   2          }
+  37   1          
+  38   1          CyGlobalIntEnable; /* Uncomment this line to enable global interrupts. */
+  39   1          
+  40   1          ADC_DelSig_1_StartConvert();
+  41   1          
+  42   1          for(;;)
+  43   1          {
+  44   2              /* Place your application code here. */
+  45   2              
+  46   2          }
+  47   1      }
+  48          
+  49          CY_ISR(ADC_DAC_Transfer)
+  50          {
+  51   1          VDAC8_1_SetValue(ADC_DelSig_1_GetResult8());
+  52   1          
+  53   1      }
+C51 COMPILER V9.51   MAIN                                                                  02/11/2014 14:11:27 PAGE 2   
+
+  54          
+  55          /* [] END OF FILE */
+C51 COMPILER V9.51   MAIN                                                                  02/11/2014 14:11:27 PAGE 3   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 16
+                                           ; SOURCE LINE # 17
+                                           ; SOURCE LINE # 19
+0000 900000      R     MOV     DPTR,#initCounter
+0003 7405              MOV     A,#05H
+0005 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 21
+0006 120000      E     LCALL   PGA_1_Start
+                                           ; SOURCE LINE # 22
+0009 120000      E     LCALL   VDAC8_1_Start
+                                           ; SOURCE LINE # 23
+000C 120000      E     LCALL   VDAC8_2_Start
+                                           ; SOURCE LINE # 24
+000F 120000      E     LCALL   ADC_DelSig_1_Start
+                                           ; SOURCE LINE # 26
+0012 7E00        R     MOV     R6,#HIGH ADC_DAC_Transfer
+0014 7F00        R     MOV     R7,#LOW ADC_DAC_Transfer
+0016 120000      E     LCALL   _isr_1_StartEx
+0019         ?C0001:
+                                           ; SOURCE LINE # 29
+0019 900000      R     MOV     DPTR,#initCounter
+001C E0                MOVX    A,@DPTR
+001D FF                MOV     R7,A
+001E EF                MOV     A,R7
+001F D3                SETB    C
+0020 9400              SUBB    A,#00H
+0022 4028              JC      ?C0002
+                                           ; SOURCE LINE # 30
+                                           ; SOURCE LINE # 31
+0024 7FC8              MOV     R7,#0C8H
+0026 120000      E     LCALL   _VDAC8_1_SetValue
+                                           ; SOURCE LINE # 32
+0029 7FE8              MOV     R7,#0E8H
+002B 7E03              MOV     R6,#03H
+002D 7D00              MOV     R5,#00H
+002F 7C00              MOV     R4,#00H
+0031 120000      E     LCALL   _?CyDelay
+                                           ; SOURCE LINE # 33
+0034 7F00              MOV     R7,#00H
+0036 120000      E     LCALL   _VDAC8_1_SetValue
+                                           ; SOURCE LINE # 34
+0039 7FE8              MOV     R7,#0E8H
+003B 7E03              MOV     R6,#03H
+003D 7D00              MOV     R5,#00H
+003F 7C00              MOV     R4,#00H
+0041 120000      E     LCALL   _?CyDelay
+                                           ; SOURCE LINE # 35
+0044 900000      R     MOV     DPTR,#initCounter
+0047 E0                MOVX    A,@DPTR
+0048 14                DEC     A
+0049 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 36
+004A 80CD              SJMP    ?C0001
+004C         ?C0002:
+                                           ; SOURCE LINE # 38
+004C D2AF              SETB    EA
+004E 9044F4            MOV     DPTR,#044F4H
+0051 74FD              MOV     A,#0FDH
+C51 COMPILER V9.51   MAIN                                                                  02/11/2014 14:11:27 PAGE 4   
+
+0053 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 40
+0054 120000      E     LCALL   ADC_DelSig_1_StartConvert
+                                           ; SOURCE LINE # 42
+0057         ?C0003:
+                                           ; SOURCE LINE # 43
+                                           ; SOURCE LINE # 46
+0057 80FE              SJMP    ?C0003
+0059 22                RET     
+             ; FUNCTION main (END)
+
+             ; FUNCTION ADC_DAC_Transfer (BEGIN)
+0000 C0E0              PUSH    ACC
+0002 C0F0              PUSH    B
+0004 C083              PUSH    DPH
+0006 C082              PUSH    DPL
+0008 C085              PUSH    DPH1
+000A C084              PUSH    DPL1
+000C C086              PUSH    DPS
+000E 758600            MOV     DPS,#00H
+0011 C000        E     PUSH    ?C?XPAGE1SFR
+0013 750000      E     MOV     ?C?XPAGE1SFR,#?C?XPAGE1RST
+0016 C0D0              PUSH    PSW
+0018 75D000            MOV     PSW,#00H
+001B C000              PUSH    AR0
+001D C001              PUSH    AR1
+001F C002              PUSH    AR2
+0021 C003              PUSH    AR3
+0023 C004              PUSH    AR4
+0025 C005              PUSH    AR5
+0027 C006              PUSH    AR6
+0029 C007              PUSH    AR7
+                                           ; SOURCE LINE # 49
+                                           ; SOURCE LINE # 51
+002B 120000      E     LCALL   ADC_DelSig_1_GetResult8
+002E 120000      E     LCALL   _VDAC8_1_SetValue
+                                           ; SOURCE LINE # 53
+0031 D007              POP     AR7
+0033 D006              POP     AR6
+0035 D005              POP     AR5
+0037 D004              POP     AR4
+0039 D003              POP     AR3
+003B D002              POP     AR2
+003D D001              POP     AR1
+003F D000              POP     AR0
+0041 D0D0              POP     PSW
+0043 D000        E     POP     ?C?XPAGE1SFR
+0045 D086              POP     DPS
+0047 D084              POP     DPL1
+0049 D085              POP     DPH1
+004B D082              POP     DPL
+004D D083              POP     DPH
+004F D0F0              POP     B
+0051 D0E0              POP     ACC
+0053 32                RETI    
+             ; FUNCTION ADC_DAC_Transfer (END)
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    174    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.51   MAIN                                                                  02/11/2014 14:11:27 PAGE 5   
+
+   XDATA SIZE       =   ----       1
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

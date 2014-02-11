@@ -1,0 +1,122 @@
+C51 COMPILER V9.51   FILTER_1_COEFFICIENTS                                                 02/11/2014 14:11:37 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE FILTER_1_COEFFICIENTS
+OBJECT MODULE PLACED IN .\DP8051\DP8051_Keil_951\Debug\Filter_1_Coefficients.obj
+COMPILER INVOKED BY: C:\Program Files\Cypress\PSoC Creator\3.0\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe .\Gene
+                    -rated_Source\PSoC3\Filter_1_Coefficients.c NOIV LARGE MODDP2 OMF2 VB(1) PR(.\DP8051\DP8051_Keil_951\Debug\Filter_1_Coeff
+                    -icients.lst) CD DB NOIP OT(2,SIZE) DF(DEBUG) INCDIR(.,.\Generated_Source\PSoC3) OJ(.\DP8051\DP8051_Keil_951\Debug\Filter
+                    -_1_Coefficients.obj)
+
+line level    source
+
+   1          #include "Filter_1.h"
+   2          #include "Filter_1_PVT.h"
+   3          
+   4          
+   5          /*******************************************************************************
+   6          * ChannelA filter coefficients.
+   7          * Filter Type is: Biquad
+   8          *******************************************************************************/
+   9          
+  10          /* Renamed array for backward compatibility.
+  11          *  Should not be used in new designs.
+  12          */
+  13          #define ChannelABiquadCoefficients Filter_1_ChannelABiquadCoefficients
+  14          
+  15          /* Number of Biquad sections are: 6 */
+  16          
+  17          const uint8 CYCODE Filter_1_ChannelABiquadCoefficients[Filter_1_BIQUAD_A_SIZE] = 
+  18          {
+  19           /* Coefficients of Section 0 */
+  20           0xAAu, 0xFEu, 0x0Fu, 0x00u, /* Section(0)_A0, 0.249918460845947 */
+  21          
+  22           0xADu, 0x02u, 0xE0u, 0x00u, /* Section(0)_A1, -0.499836683273315 */
+  23          
+  24           0xAAu, 0xFEu, 0x0Fu, 0x00u, /* Section(0)_A2, 0.249918460845947 */
+  25          
+  26           0x4Eu, 0xF5u, 0x7Fu, 0x00u, /* Section(0)_B1, -1.99934720993042 */
+  27          
+  28           0xB2u, 0x0Au, 0xC0u, 0x00u, /* Section(0)_B2, 0.99934720993042 */
+  29          
+  30           /* Coefficients of Section 1 */
+  31           0xB1u, 0xF9u, 0x3Fu, 0x00u, /* Section(1)_A0, 0.999614953994751 */
+  32          
+  33           0x9Eu, 0x0Cu, 0x80u, 0x00u, /* Section(1)_A1, -1.9992299079895 */
+  34          
+  35           0xB1u, 0xF9u, 0x3Fu, 0x00u, /* Section(1)_A2, 0.999614953994751 */
+  36          
+  37           0x62u, 0xF3u, 0x7Fu, 0x00u, /* Section(1)_B1, -1.9992299079895 */
+  38          
+  39           0x9Du, 0x0Cu, 0xC0u, 0x00u, /* Section(1)_B2, 0.999230146408081 */
+  40          
+  41           /* Coefficients of Section 2 */
+  42           0x6Du, 0xFCu, 0x3Fu, 0x00u, /* Section(2)_A0, 0.999781847000122 */
+  43          
+  44           0x26u, 0x07u, 0x80u, 0x00u, /* Section(2)_A1, -1.99956369400024 */
+  45          
+  46           0x6Du, 0xFCu, 0x3Fu, 0x00u, /* Section(2)_A2, 0.999781847000122 */
+  47          
+  48           0xDAu, 0xF8u, 0x7Fu, 0x00u, /* Section(2)_B1, -1.99956369400024 */
+  49          
+  50           0x25u, 0x07u, 0xC0u, 0x00u, /* Section(2)_B2, 0.999563932418823 */
+  51          
+  52           /* Coefficients of Section 3 */
+C51 COMPILER V9.51   FILTER_1_COEFFICIENTS                                                 02/11/2014 14:11:37 PAGE 2   
+
+  53           0x61u, 0x61u, 0x3Fu, 0x00u, /* Section(3)_A0, 0.990318536758423 */
+  54          
+  55           0x3Du, 0x3Du, 0x81u, 0x00u, /* Section(3)_A1, -1.98063731193542 */
+  56          
+  57           0x61u, 0x61u, 0x3Fu, 0x00u, /* Section(3)_A2, 0.990318536758423 */
+  58          
+  59           0x7Du, 0xFDu, 0x7Fu, 0x00u, /* Section(3)_B1, -1.99984669685364 */
+  60          
+  61           0x83u, 0x02u, 0xC0u, 0x00u, /* Section(3)_B2, 0.999846696853638 */
+  62          
+  63           /* Coefficients of Section 4 */
+  64           0xD0u, 0x26u, 0x00u, 0x00u, /* Section(4)_A0, 0.00236892700195313 */
+  65          
+  66           0xA0u, 0x4Du, 0x00u, 0x00u, /* Section(4)_A1, 0.00473785400390625 */
+  67          
+  68           0xD0u, 0x26u, 0x00u, 0x00u, /* Section(4)_A2, 0.00236892700195313 */
+  69          
+  70           0x32u, 0xA4u, 0x79u, 0x00u, /* Section(4)_B1, -1.90064668655396 */
+  71          
+  72           0x73u, 0x82u, 0xC5u, 0x00u, /* Section(4)_B2, 0.913913011550903 */
+  73          
+  74           /* Coefficients of Section 5 */
+  75           0xD8u, 0x1Eu, 0x01u, 0x00u, /* Section(5)_A0, 0.0175075531005859 */
+  76          
+  77           0xB1u, 0x3Du, 0x02u, 0x00u, /* Section(5)_A1, 0.035015344619751 */
+  78          
+  79           0xD8u, 0x1Eu, 0x01u, 0x00u, /* Section(5)_A2, 0.0175075531005859 */
+  80          
+  81           0x60u, 0xA9u, 0x72u, 0x00u, /* Section(5)_B1, -1.79158782958984 */
+  82          
+  83           0xBEu, 0x89u, 0xCCu, 0x00u, /* Section(5)_B2, 0.804092884063721 */
+  84          };
+  85          
+C51 COMPILER V9.51   FILTER_1_COEFFICIENTS                                                 02/11/2014 14:11:37 PAGE 3   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =    120    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

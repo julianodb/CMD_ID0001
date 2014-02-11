@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="proto01\proto01\Source Files\main.c">
+<ExpandedNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\TopDesign.cysch</v>
+<v>proto01\proto01\proto01.cydwr</v>
+<v>proto01\proto01\Header Files</v>
+<v>proto01\proto01\Source Files</v>
+<v>proto01\proto01\Source Files\main.c</v>
+<v>proto01\proto01\Generated_Source</v>
+<v>proto01\proto01\Generated_Source\PSoC3</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1\ADC_DelSig_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1\ADC_DelSig_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1\ADC_DelSig_1_INT.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1\ADC_DelSig_1_PM.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_AMux</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_Ext_CP_Clk</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_IRQ</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_theACLK</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyBootAsmKeil.a51</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyDmac.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyDmac.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyFlash.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyFlash.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyLib.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CyLib.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cymem.a51</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cypins.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cyPm.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cyPm.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CySpc.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\CySpc.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cytypes.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\cyutils.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\KeilStart.a51</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\PSoC3_8051.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cy_boot\PSoC3_8051.inc</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_Coefficients.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_PM.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_PVT.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_PVT.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_RAM_Data.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1\isr_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1\isr_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1_PM.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\SENSOROUTPUT</v>
+<v>proto01\proto01\Generated_Source\PSoC3\SENSOROUTPUT\SENSOROUTPUT.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\SENSOROUTPUT\SENSOROUTPUT.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\SENSOROUTPUT\SENSOROUTPUT_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_1\VDAC8_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_1\VDAC8_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_1\VDAC8_1_PM.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_2</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_2\VDAC8_2.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_2\VDAC8_2.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VDAC8_2\VDAC8_2_PM.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VREF</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VREF\VREF.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VREF\VREF.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\VREF\VREF_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cydevice.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cydevice_trm.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cydevicekeil.inc</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cydevicekeil_trm.inc</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cydisabledsheets.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cyfitter.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cyfitter_cfg.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cyfitter_cfg.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\cyfitterkeil.inc</v>
+<v>proto01\proto01\Generated_Source\PSoC3\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proto01\proto01\Generated_Source\PSoC3\Filter_1\Filter_1_RAM_Data.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\GND\GND_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1\isr_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\isr_1\isr_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED1\LED1_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\LED2\LED2_aliases.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1.c</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1.h</v>
+<v>proto01\proto01\Generated_Source\PSoC3\PGA_1\PGA_1_PM.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\TopDesign</v>
+<v>proto01\proto01\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\TopDesign</v>
+<v>proto01\proto01\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\DP8051</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyBootAsmKeil.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyDmac.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyFlash.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyLib.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cymem.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cyPm.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CySpc.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cyutils.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\Filter_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\Filter_1_Coefficients.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\Filter_1_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\Filter_1_PVT.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\Filter_1_RAM_Data.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\GND.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\isr_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\KeilStart.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\LED1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\LED2.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\main.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\PGA_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\PGA_1_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\SENSOROUTPUT.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\VDAC8_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\VDAC8_1_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\VDAC8_2.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\VDAC8_2_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\VREF.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\proto01.elf</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\proto01.hex</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\proto01.map</v>
+<v>proto01\proto01\proto01.rpt</v>
+<v>proto01\proto01\proto01_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\DP8051</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyBootAsmKeil.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyDmac.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyFlash.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\CyLib.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cymem.lst</v>
+<v>proto01\proto01\DP8051\DP8051_Keil_951\Debug\Listing Files\cyPm.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\PSoC 3 Architecture TRM</v>
+<v>proto01\proto01\CY8C38 Family Datasheet</v>
+<v>proto01\proto01\System Reference Guide v4_0</v>
+<v>proto01\proto01\ADC_DelSig_v3_0</v>
+<v>proto01\proto01\cy_isr_v1_70</v>
+<v>proto01\proto01\cy_pins_v1_90</v>
+<v>proto01\proto01\cy_vref_v1_60</v>
+<v>proto01\proto01\Filter_v2_20</v>
+<v>proto01\proto01\PGA_v2_0</v>
+<v>proto01\proto01\VDAC8_v1_90</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>proto01</v>
+<v>proto01\proto01</v>
+<v>proto01\proto01\PSoC 3 Architecture TRM</v>
+<v>proto01\proto01\CY8C38 Family Datasheet</v>
+<v>proto01\proto01\System Reference Guide v4_0</v>
+<v>proto01\proto01\ADC_DelSig_v3_0</v>
+<v>proto01\proto01\cy_isr_v1_70</v>
+<v>proto01\proto01\cy_pins_v1_90</v>
+<v>proto01\proto01\cy_vref_v1_60</v>
+<v>proto01\proto01\Filter_v2_20</v>
+<v>proto01\proto01\PGA_v2_0</v>
+<v>proto01\proto01\VDAC8_v1_90</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\proto01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\proto01.cydsn\proto01.cydwr" />
+<name v=".\proto01.cydsn\main.c" />
+</OpenDocs>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
