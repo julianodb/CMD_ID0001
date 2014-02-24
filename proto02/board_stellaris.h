@@ -73,6 +73,9 @@ int initialize_uart ();
 /* adc */
 int initialize_adc (int mode);
 
+/* Toggle corresponding LED */
+int led_toggle (int led);
+
 /* Prints string on UART */
 int uart_printf (char *s);
 
@@ -81,4 +84,5 @@ unsigned long adc_get_temp ();
 
 /* Get one reading from the adc */
 unsigned long adc_get_reading ();
+
 #endif /* BOARD_STELLARIS_H */

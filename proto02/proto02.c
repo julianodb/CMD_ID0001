@@ -52,7 +52,7 @@ main(void)
 
 	//UARTprintf ("Temperature = %3d*C \r", adc_get_temp ());
 	UARTprintf ("AIN0 (PE3) = %3d \r", adc_get_reading ());
-
+	led_toggle (GREEN_LED);
         //
         // This function provides a means of generating a constant length
         // delay.  The function delay (in cycles) = 3 * parameter.  Delay

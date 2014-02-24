@@ -152,6 +152,29 @@ initialize_adc (int mode)
 	return 0;
 }
 
+/* Toggle corresponding LED */
+int 
+led_toggle (int led)
+{
+	int curr_status = 0;
+
+	switch(led) {
+	case RED_LED:
+	case GREEN_LED:
+	case BLUE_LED:
+		curr_status = GPIOPinRead(GPIO_PORTF_BASE, led);
+		GPIOPinWrite(GPIO_PORTF_BASE, led, ~curr_status);
+		break;
+	default:
+		
+		break;
+ 
+
+	}
+	return 0;
+}
+
+
 /* Prints string on UART */
 int 
 uart_printf (char *s)
