@@ -62,6 +62,8 @@ initialize_uart (void)
 	ROM_GPIOPinTypeUART (GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
 	UARTStdioInit (0);
 
+	uart_printf = UARTprintf;
+
 	return 0; // Success
 }
 
@@ -119,15 +121,8 @@ led_toggle (int led)
 	return 0; // Success
 }
 
-
 /* Prints string on UART */
-int 
-uart_printf (char *s)
-{
-
-	UARTprintf(s);
-	return 0;
-}
+// uart_printf = UARTprintf; 
 
 /* Get temperature (Celsius) based on ADC reading */
 unsigned long 

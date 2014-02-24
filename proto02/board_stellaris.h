@@ -77,7 +77,7 @@ int initialize_adc (int mode);
 int led_toggle (int led);
 
 /* Prints string on UART */
-int uart_printf (char *s);
+void (*uart_printf) (const char *s, ...);
 
 /* Get temperature (Celsius) based on ADC reading */
 unsigned long adc_get_temp ();
