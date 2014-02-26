@@ -29,7 +29,7 @@
 #define FPU_LAZY_STACKING 	YES // float on interrupts vs. longer stack use
 
 /* Set clocking and basic configuration  */
-int 
+uint8_t 
 initialize_board (void)
 {
 
@@ -44,7 +44,7 @@ initialize_board (void)
 }
 
 /* Enable corresponding GPIO and set Pins for led */
-int
+uint8_t
 initialize_led (void)
 {
 
@@ -58,7 +58,7 @@ initialize_led (void)
 }
 
 /* Enable corresponding GPIO and init UART (debug connection) */
-int
+uint8_t
 initialize_uart (void)
 {
 	ROM_SysCtlPeripheralEnable (SYSCTL_PERIPH_GPIOA); // UART is on A
@@ -73,8 +73,8 @@ initialize_uart (void)
 }
 
 /* adc */
-int 
-initialize_adc (int mode)
+uint8_t 
+initialize_adc (uint8_t mode)
 {
 
 	SysCtlPeripheralEnable (SYSCTL_PERIPH_ADC0); // Enable ADC0
@@ -107,7 +107,7 @@ initialize_adc (int mode)
 }
 
 /* pwm */
-int 
+uint8_t 
 initialize_pwm (void)
 {
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_WTIMER2);
@@ -130,10 +130,10 @@ initialize_pwm (void)
 
 
 /* Toggle corresponding LED */
-int 
-led_toggle (int led)
+uint8_t 
+led_toggle (uint8_t led)
 {
-	int curr_status = 0;
+	uint32_t curr_status = 0;
 
 	switch (led) {
 	case RED_LED:
@@ -153,10 +153,10 @@ led_toggle (int led)
 // uart_printf = UARTprintf; 
 
 /* Get temperature (Celsius) based on ADC reading */
-unsigned long 
+uint32_t 
 adc_get_temp (void)
 {
-	unsigned long ulADC0_Value[1]; // 1 is sequence length
+	uint32_t ulADC0_Value[1]; // 1 is sequence length
 
 	// TODO: if initialized in temperature mode
 
@@ -173,10 +173,10 @@ adc_get_temp (void)
 }
 
 /* Get one reading from the adc */
-unsigned long 
+uint32_t 
 adc_get_reading (void)
 {
-    unsigned long ulADC0_Value[1]; // 1 is Sequence length
+    uint32_t ulADC0_Value[1]; // 1 is Sequence length
 
 	// TODO: if initialized in temperature mode
 
@@ -193,8 +193,8 @@ adc_get_reading (void)
 }
 
 /* Set pwm duty cicle */
-int 
-pwm_set_duty (unsigned int duty)
+uint8_t 
+pwm_set_duty (uint32_t duty)
 {
 	if (duty < 1)
 		duty = 1;
