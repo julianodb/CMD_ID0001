@@ -24,12 +24,17 @@
 
 #include "board_stellaris.h"
 
+#define YES			1
+#define NO			0
+#define FPU_LAZY_STACKING 	YES // float on interrupts vs. longer stack use
+
 /* Set clocking and basic configuration  */
 int 
 initialize_board (void)
 {
 
-	ROM_FPULazyStackingEnable (); // float on interrupts
+	if (FPU_LAZY_STACKING == YES)
+		ROM_FPULazyStackingEnable (); // float on interrupts
 
 	ROM_SysCtlClockSet (SYSCTL_SYSDIV_10 | SYSCTL_USE_PLL 
 			    | SYSCTL_XTAL_16MHZ | SYSCTL_OSC_MAIN);
@@ -101,6 +106,29 @@ initialize_adc (int mode)
 	return 0; // Success
 }
 
+/* pwm */
+int 
+initialize_pwm (void)
+{
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_WTIMER2);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+
+	HWREG (WTIMER2_BASE + TIMER_O_CFG)   = 0x04; // 32-bit
+	HWREG (WTIMER2_BASE + TIMER_O_TAMR)  = 0x0A; // periodic, PWM
+	HWREG (WTIMER2_BASE + TIMER_O_TAILR) = PWM_PRESCALE;
+	HWREG (WTIMER2_BASE + TIMER_O_CTL)   |= 0x40; // invert output
+
+	GPIOPinConfigure(GPIO_PD0_WT2CCP0);
+	GPIOPinTypeTimer(GPIO_PORTD_BASE, GPIO_PIN_0);
+	GPIOPadConfigSet(GPIO_PORTD_BASE, GPIO_PIN_0, GPIO_STRENGTH_8MA_SC,
+			 GPIO_PIN_TYPE_STD);
+
+	TimerEnable(WTIMER2_BASE, TIMER_A);
+
+	return 0;
+}
+
+
 /* Toggle corresponding LED */
 int 
 led_toggle (int led)
@@ -163,5 +191,20 @@ adc_get_reading (void)
 
         return ulADC0_Value[0];
 }
+
+/* Set pwm duty cicle */
+int 
+pwm_set_duty (unsigned int duty)
+{
+	if (duty < 1)
+		duty = 1;
+	else if (duty > 1000)
+		duty = 1000;
+
+	TimerMatchSet (WTIMER2_BASE, TIMER_A, PWM_PRESCALE * duty / 1000 -1);
+
+	return 0;
+}
+
 
 /* EOF */

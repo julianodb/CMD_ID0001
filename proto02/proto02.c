@@ -39,20 +39,31 @@ __error__(char *pcFilename, unsigned long ulLine)
 int
 main(void)
 {
+	unsigned int pot_value;
+	unsigned int counter = 0;
 
 	initialize_board();
 	initialize_led();
 	initialize_uart();
 	initialize_adc(MODE_ANALOG0);
+	initialize_pwm();
 
 	uart_printf("Hello, world!\n");
 
     while(1)
     {
 
+	pot_value = adc_get_reading();
 	//UARTprintf ("Temperature = %3d*C \r", adc_get_temp ());
-	uart_printf ("AIN0 (PE3) = %3d \r", adc_get_reading ());
+	uart_printf ("AIN0 (PE3) = %3d Duty value = %d\r", pot_value,
+		     pot_value/4);
 	led_toggle (GREEN_LED);
+
+	counter += 100;
+	if (counter > 1000)
+		counter = 0;
+
+	pwm_set_duty (pot_value/4);
         //
         // This function provides a means of generating a constant length
         // delay.  The function delay (in cycles) = 3 * parameter.  Delay

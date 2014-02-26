@@ -42,12 +42,16 @@
 /* Files needed in initialize_adc */
 #include "driverlib/adc.h"
 
+/* Files needed in initialize_pwm */
+#include "driverlib/timer.h"
+#include "inc/hw_timer.h"
+
 /* These files might be of interest  */
 /*
-	#include "inc/hw_memmap.h"
+
 	#include "driverlib/debug.h"
 	#include "driverlib/fpu.h"
-	#include "driverlib/pin_map.h"
+
 */
 
 /***    Macros    ***/
@@ -55,6 +59,7 @@
 #define RED_LED   GPIO_PIN_1
 #define BLUE_LED  GPIO_PIN_2
 #define GREEN_LED GPIO_PIN_3
+#define PWM_PRESCALE	0xFFFF
 
 #define MODE_TEMPERATURE 0
 #define MODE_ANALOG0	 1
@@ -73,6 +78,9 @@ int initialize_uart ();
 /* adc */
 int initialize_adc (int mode);
 
+/* pwm */
+int initialize_pwm ();
+
 /* Toggle corresponding LED */
 int led_toggle (int led);
 
@@ -84,5 +92,8 @@ unsigned long adc_get_temp ();
 
 /* Get one reading from the adc */
 unsigned long adc_get_reading ();
+
+/* Set pwm duty cicle */
+int pwm_set_duty (unsigned int duty);
 
 #endif /* BOARD_STELLARIS_H */
