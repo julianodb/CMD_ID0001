@@ -7916,7 +7916,7 @@ Source: www.kingbright.com</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="390 k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="390 K"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0402" value="4700 pF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
