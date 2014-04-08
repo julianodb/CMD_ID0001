@@ -1,6 +1,3 @@
-#ifndef BOARD_STELLARIS_H
-#define BOARD_STELLARIS_H
-
 /*                                                                         */
 /*    Board Stellaris                                                      */
 /*                                                                         */
@@ -25,7 +22,12 @@
 /*    along with Proto02.  If not, see <http://www.gnu.org/licenses/>.     */
 /*                                                                         */
 
+#ifndef BOARD_STELLARIS_H
+#define BOARD_STELLARIS_H
+
 /***    Dependencies    ***/
+
+#include <stdint.h>
 
 /* files needed in initialize_board */
 #include "inc/hw_types.h"
@@ -67,33 +69,33 @@
 /***    Function Prototypes    ***/
 
 /* Set clocking and basic configuration  */
-int initialize_board ();
+uint8_t initialize_board ();
 
 /* Enable corresponding GPIO and set Pins for led */
-int initialize_led ();
+uint8_t initialize_led ();
 
 /* Enable corresponding GPIO and init UART (debug connection) */
-int initialize_uart ();
+uint8_t initialize_uart ();
 
 /* adc */
-int initialize_adc (int mode);
+uint8_t initialize_adc (uint8_t mode);
 
 /* pwm */
-int initialize_pwm ();
+uint8_t initialize_pwm ();
 
 /* Toggle corresponding LED */
-int led_toggle (int led);
+uint8_t led_toggle (uint8_t led);
 
 /* Prints string on UART */
 void (*uart_printf) (const char *s, ...);
 
 /* Get temperature (Celsius) based on ADC reading */
-unsigned long adc_get_temp ();
+uint32_t adc_get_temp ();
 
 /* Get one reading from the adc */
-unsigned long adc_get_reading ();
+uint32_t adc_get_reading ();
 
 /* Set pwm duty cicle */
-int pwm_set_duty (unsigned int duty);
+uint8_t pwm_set_duty (uint32_t duty);
 
 #endif /* BOARD_STELLARIS_H */

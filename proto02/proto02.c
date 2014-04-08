@@ -23,6 +23,7 @@
 /*                                                                         */
 
 #include "board_stellaris.h"
+#include <stdint.h>
 
 //*****************************************************************************
 //
@@ -37,23 +38,23 @@ __error__(char *pcFilename, unsigned long ulLine)
 #endif
 
 int
-main(void)
+main (void)
 {
-	unsigned int pot_value;
-	unsigned int counter = 0;
+	uint32_t pot_value;
+	uint32_t counter = 0;
 
-	initialize_board();
-	initialize_led();
-	initialize_uart();
-	initialize_adc(MODE_ANALOG0);
-	initialize_pwm();
+	initialize_board ();
+	initialize_led ();
+	initialize_uart ();
+	initialize_adc (MODE_ANALOG0);
+	initialize_pwm ();
 
-	uart_printf("Hello, world!\n");
+	uart_printf ("Hello, world!\n");
 
-    while(1)
+    while (1)
     {
 
-	pot_value = adc_get_reading();
+	pot_value = adc_get_reading ();
 	//UARTprintf ("Temperature = %3d*C \r", adc_get_temp ());
 	uart_printf ("AIN0 (PE3) = %3d Duty value = %d\r", pot_value,
 		     pot_value/4);
@@ -69,7 +70,7 @@ main(void)
         // delay.  The function delay (in cycles) = 3 * parameter.  Delay
         // 250ms arbitrarily.
         //
-        SysCtlDelay(SysCtlClockGet() / 12);
+        SysCtlDelay (SysCtlClockGet () / 12);
 
 
     }
