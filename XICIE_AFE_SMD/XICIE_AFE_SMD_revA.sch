@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -9192,68 +9192,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="zetex">
-<description>&lt;b&gt;Zetex Power MOS FETs, Bridges, Diodes&lt;/b&gt;&lt;p&gt;
-http://www.zetex.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT-23">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
-<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
-<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
-<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
-<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NPNSOT23" prefix="T" uservalue="yes">
-<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="A" pin="B" pad="3"/>
-<connect gate="A" pin="C" pad="1"/>
-<connect gate="A" pin="E" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="DSS20201L-7" constant="no"/>
-<attribute name="OC_FARNELL" value="1710688" constant="no"/>
-<attribute name="OC_NEWARK" value="25R4555" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9261,6 +9199,12 @@ http://www.zetex.com&lt;p&gt;
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+</class>
+<class number="1" name="GND" width="0.254" drill="0">
+<clearance class="1" value="0.254"/>
+</class>
+<class number="2" name="V" width="0.254" drill="0">
+<clearance class="2" value="0.1016"/>
 </class>
 </classes>
 <parts>
@@ -9275,13 +9219,11 @@ http://www.zetex.com&lt;p&gt;
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="LED2" library="led" deviceset="LED" device="5MM"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0402" value="1.1"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0402" value="1.1"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="390 K"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0402" value="4700 pF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -9295,17 +9237,13 @@ http://www.zetex.com&lt;p&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7 uF"/>
 <part name="L1" library="juliano" deviceset="L-EU" device="" value="4.7 uH"/>
-<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="510 K"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1.02 M"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="604 K"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="4.7 uF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="D1" library="juliano" deviceset="SCHOTTKY-DIODE" device="SMD"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="510 K"/>
-<part name="T1" library="zetex" deviceset="NPNSOT23" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1.02 M"/>
 </parts>
 <sheets>
 <sheet>
@@ -9336,8 +9274,6 @@ http://www.zetex.com&lt;p&gt;
 <instance part="P+4" gate="VCC" x="139.7" y="109.22"/>
 <instance part="GND2" gate="1" x="139.7" y="58.42"/>
 <instance part="GND3" gate="1" x="154.94" y="30.48"/>
-<instance part="R4" gate="G$1" x="134.62" y="96.52" rot="R90"/>
-<instance part="R5" gate="G$1" x="160.02" y="68.58" rot="R90"/>
 <instance part="R6" gate="G$1" x="66.04" y="88.9" rot="R180"/>
 <instance part="C2" gate="G$1" x="73.66" y="81.28" rot="R180"/>
 <instance part="GND4" gate="1" x="73.66" y="76.2"/>
@@ -9353,17 +9289,13 @@ http://www.zetex.com&lt;p&gt;
 <instance part="GND8" gate="1" x="-43.18" y="104.14"/>
 <instance part="C1" gate="G$1" x="-71.12" y="132.08"/>
 <instance part="L1" gate="G$1" x="-58.42" y="147.32" rot="R90"/>
-<instance part="Q3" gate="G$1" x="-10.16" y="134.62" rot="MR90"/>
-<instance part="R7" gate="G$1" x="-17.78" y="127" rot="R180"/>
 <instance part="R8" gate="G$1" x="2.54" y="129.54" rot="R270"/>
 <instance part="R9" gate="G$1" x="2.54" y="114.3" rot="R270"/>
 <instance part="C3" gate="G$1" x="10.16" y="132.08"/>
 <instance part="GND9" gate="1" x="10.16" y="121.92"/>
 <instance part="P+6" gate="VCC" x="10.16" y="139.7"/>
 <instance part="D1" gate="G$1" x="-33.02" y="147.32"/>
-<instance part="R10" gate="G$1" x="-45.72" y="96.52" rot="R180"/>
-<instance part="T1" gate="A" x="-12.7" y="96.52"/>
-<instance part="GND10" gate="1" x="-10.16" y="86.36"/>
+<instance part="R4" gate="G$1" x="-83.82" y="101.6" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9417,7 +9349,7 @@ http://www.zetex.com&lt;p&gt;
 <junction x="20.32" y="68.58"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="2">
 <segment>
 <pinref part="U$1" gate="G$1" pin="C"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
@@ -9432,23 +9364,12 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="154.94" y1="78.74" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="76.2" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="73.66" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="76.2" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
-<junction x="154.94" y="76.2"/>
+<wire x1="154.94" y1="73.66" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="139.7" y1="106.68" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="104.14" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="104.14" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
-<junction x="139.7" y="104.14"/>
+<wire x1="139.7" y1="106.68" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VDDDA"/>
@@ -9459,15 +9380,20 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="10.16" y1="137.16" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="134.62" x2="2.54" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <junction x="10.16" y="134.62"/>
 <junction x="2.54" y="134.62"/>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
+<wire x1="-22.86" y1="134.62" x2="-25.4" y2="134.62" width="0.1524" layer="91"/>
+<junction x="-22.86" y="134.62"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-30.48" y1="147.32" x2="-22.86" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="147.32" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="134.62" x2="2.54" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -9526,11 +9452,6 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="10.16" y1="124.46" x2="10.16" y2="127" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="T1" gate="A" pin="E"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="88.9" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="SENSOROUT" class="0">
 <segment>
@@ -9582,25 +9503,14 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="63.5" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="60.96" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="60.96" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<junction x="154.94" y="60.96"/>
+<wire x1="154.94" y1="63.5" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="86.36" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="88.9" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="91.44" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="88.9" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
-<junction x="139.7" y="88.9"/>
+<wire x1="139.7" y1="91.44" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_VREF" class="0">
@@ -9650,7 +9560,7 @@ http://www.zetex.com&lt;p&gt;
 <label x="99.06" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="VBAT" class="2">
 <segment>
 <pinref part="J1" gate="-3" pin="S"/>
 <wire x1="-78.74" y1="134.62" x2="-71.12" y2="134.62" width="0.1524" layer="91"/>
@@ -9660,10 +9570,17 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-71.12" y="134.62"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="147.32" x2="-71.12" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="147.32" x2="-71.12" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-71.12" y1="139.7" x2="-71.12" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="106.68" x2="-99.06" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="106.68" x2="-99.06" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="139.7" x2="-71.12" y2="139.7" width="0.1524" layer="91"/>
+<junction x="-71.12" y="139.7"/>
+<label x="-68.58" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SW" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="SW"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -9671,30 +9588,7 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-43.18" y1="147.32" x2="-35.56" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-43.18" y="147.32"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="VOUT"/>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="-15.24" y1="134.62" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-22.86" y1="134.62" x2="-25.4" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="127" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-22.86" y="134.62"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="-30.48" y1="147.32" x2="-22.86" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="147.32" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="-12.7" y1="127" x2="-10.16" y2="127" width="0.1524" layer="91"/>
-<pinref part="T1" gate="A" pin="C"/>
-<wire x1="-10.16" y1="127" x2="-10.16" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-10.16" y="127"/>
+<label x="-48.26" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -9709,22 +9603,13 @@ http://www.zetex.com&lt;p&gt;
 <junction x="2.54" y="121.92"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="SHUTDOWN" class="0">
 <segment>
-<wire x1="-78.74" y1="96.52" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="96.52" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="!SHDN"/>
 <wire x1="-60.96" y1="96.52" x2="-60.96" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="96.52" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-60.96" y="96.52"/>
 <label x="-81.28" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="T1" gate="A" pin="B"/>
-<wire x1="-40.64" y1="96.52" x2="-15.24" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
