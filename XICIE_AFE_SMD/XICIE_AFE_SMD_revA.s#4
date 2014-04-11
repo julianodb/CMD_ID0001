@@ -9262,6 +9262,12 @@ http://www.zetex.com&lt;p&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="GND" width="0.254" drill="0">
+<clearance class="1" value="0.254"/>
+</class>
+<class number="2" name="V" width="0.254" drill="0">
+<clearance class="2" value="0.1016"/>
+</class>
 </classes>
 <parts>
 <part name="U$1" library="juliano" deviceset="PD15-22C-TR8" device=""/>
@@ -9415,7 +9421,7 @@ http://www.zetex.com&lt;p&gt;
 <junction x="20.32" y="68.58"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="2">
 <segment>
 <pinref part="U$1" gate="G$1" pin="C"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
@@ -9454,7 +9460,7 @@ http://www.zetex.com&lt;p&gt;
 <junction x="2.54" y="134.62"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -9626,7 +9632,7 @@ http://www.zetex.com&lt;p&gt;
 <label x="99.06" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="N$10" class="2">
 <segment>
 <pinref part="J1" gate="-3" pin="S"/>
 <wire x1="-78.74" y1="134.62" x2="-71.12" y2="134.62" width="0.1524" layer="91"/>

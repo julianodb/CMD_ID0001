@@ -106,10 +106,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="30" y1="50.5" x2="66" y2="50.5" width="0" layer="20"/>
-<wire x1="66" y1="50.5" x2="66" y2="69" width="0" layer="20"/>
-<wire x1="66" y1="69" x2="30" y2="69" width="0" layer="20"/>
-<wire x1="30" y1="69" x2="30" y2="50.5" width="0" layer="20"/>
+<wire x1="30" y1="50.5" x2="64" y2="50.5" width="0" layer="20"/>
+<wire x1="64" y1="50.5" x2="64" y2="68.5" width="0" layer="20"/>
+<wire x1="64" y1="68.5" x2="30" y2="68.5" width="0" layer="20"/>
+<wire x1="30" y1="68.5" x2="30" y2="50.5" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="juliano">
@@ -2239,12 +2239,12 @@ design rules under a new name.</description>
 <vertex x="43.7" y="58.05"/>
 <vertex x="43.7" y="61.65"/>
 <vertex x="42.4" y="61.65"/>
-<vertex x="42.4" y="67.2"/>
-<vertex x="50.75" y="67.3"/>
-<vertex x="60.45" y="67.3"/>
-<vertex x="60.45" y="61.6"/>
-<vertex x="55.45" y="61.7"/>
-<vertex x="54.2" y="61.9"/>
+<vertex x="42.4" y="69"/>
+<vertex x="50.75" y="69.05"/>
+<vertex x="60.45" y="69.9"/>
+<vertex x="60.45" y="61.15"/>
+<vertex x="55" y="61.25"/>
+<vertex x="55" y="62.05"/>
 <vertex x="52.8" y="62.15"/>
 <vertex x="51.65" y="62.15"/>
 <vertex x="51.65" y="65.05"/>
@@ -2259,16 +2259,21 @@ design rules under a new name.</description>
 <wire x1="40" y1="57" x2="40" y2="58" width="0.254" layer="1"/>
 <wire x1="40" y1="57" x2="40.23" y2="56.52" width="0.254" layer="16"/>
 <wire x1="40" y1="57" x2="40.27" y2="56.79" width="0.254" layer="1"/>
-<wire x1="52.5" y1="65" x2="52.5" y2="65.5" width="0.254" layer="16"/>
-<wire x1="54" y1="63.5" x2="52.5" y2="65" width="0.254" layer="16"/>
-<wire x1="55" y1="63.5" x2="54" y2="63.5" width="0.254" layer="1"/>
-<wire x1="55.5" y1="63" x2="55" y2="63.5" width="0.254" layer="1"/>
-<wire x1="52.5" y1="65.5" x2="52.71" y2="65.75" width="0.254" layer="16"/>
-<wire x1="55.5" y1="63" x2="55.99" y2="62.58" width="0.254" layer="1"/>
-<wire x1="56.5" y1="62.5" x2="56.5" y2="60.5" width="0.254" layer="1"/>
-<wire x1="56.5" y1="60.5" x2="56.7" y2="60.38" width="0.254" layer="1"/>
 <via x="40" y="58" extent="1-16" drill="0.3302"/>
-<via x="54" y="63.5" extent="1-16" drill="0.3302"/>
+<wire x1="49" y1="64" x2="46" y2="61" width="0.254" layer="16"/>
+<wire x1="49" y1="64.5" x2="49" y2="64" width="0.254" layer="16"/>
+<wire x1="49.5" y1="65" x2="49" y2="64.5" width="0.254" layer="16"/>
+<wire x1="51" y1="65" x2="49.5" y2="65" width="0.254" layer="16"/>
+<wire x1="51.5" y1="64.5" x2="51" y2="65" width="0.254" layer="16"/>
+<wire x1="52.5" y1="64.5" x2="51.5" y2="64.5" width="0.254" layer="16"/>
+<wire x1="52.5" y1="65.5" x2="52.5" y2="64.5" width="0.254" layer="16"/>
+<wire x1="46" y1="61" x2="45.780996875" y2="60.8998375" width="0.254" layer="1"/>
+<wire x1="52.5" y1="65.5" x2="52.71" y2="65.75" width="0.254" layer="16"/>
+<via x="46" y="61" extent="1-16" drill="0.3302"/>
+<wire x1="55.99" y1="62.58" x2="56.5" y2="62.58" width="0.6096" layer="1"/>
+<wire x1="56.5" y1="62.58" x2="57.39" y2="62.58" width="0.6096" layer="1"/>
+<wire x1="56.5" y1="62.58" x2="56.5" y2="61.45" width="0.254" layer="1"/>
+<wire x1="56.5" y1="61.45" x2="56.7" y2="60.38" width="0.254" layer="1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="IC1" pad="11"/>
@@ -2295,6 +2300,9 @@ design rules under a new name.</description>
 <vertex x="22.25" y="72.8"/>
 </polygon>
 <contactref element="J1" pad="1"/>
+<wire x1="53.5" y1="65" x2="53.5" y2="65.5" width="0.254" layer="16"/>
+<wire x1="54" y1="64.5" x2="53.5" y2="65" width="0.254" layer="16"/>
+<wire x1="53.5" y1="65.5" x2="53.51" y2="65.75" width="0.254" layer="16"/>
 </signal>
 <signal name="SENSOROUT">
 <contactref element="IC1" pad="1"/>
@@ -2374,17 +2382,14 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="5"/>
 <contactref element="C2" pad="2"/>
 <wire x1="51" y1="60" x2="51" y2="61.5" width="0.254" layer="1"/>
-<wire x1="51" y1="61.5" x2="50.9" y2="61.7" width="0.254" layer="1"/>
 <wire x1="51" y1="60" x2="50.78" y2="59.75" width="0.254" layer="1"/>
-<wire x1="51.5" y1="62" x2="51" y2="62" width="0.254" layer="1"/>
-<wire x1="53" y1="63.5" x2="51.5" y2="62" width="0.254" layer="1"/>
-<wire x1="54" y1="62.5" x2="53" y2="63.5" width="0.254" layer="16"/>
-<wire x1="55.5" y1="61" x2="54" y2="62.5" width="0.254" layer="1"/>
+<wire x1="52" y1="61.5" x2="51" y2="61.5" width="0.254" layer="1"/>
+<wire x1="52.5" y1="62" x2="52" y2="61.5" width="0.254" layer="1"/>
+<wire x1="54.5" y1="62" x2="52.5" y2="62" width="0.254" layer="1"/>
+<wire x1="55.5" y1="61" x2="54.5" y2="62" width="0.254" layer="1"/>
 <wire x1="55.5" y1="60.5" x2="55.5" y2="61" width="0.254" layer="1"/>
-<wire x1="51" y1="62" x2="50.9" y2="61.7" width="0.254" layer="1"/>
+<wire x1="51" y1="61.5" x2="50.9" y2="61.7" width="0.254" layer="1"/>
 <wire x1="55.5" y1="60.5" x2="55.43" y2="60.38" width="0.254" layer="1"/>
-<via x="53" y="63.5" extent="1-16" drill="0.3302"/>
-<via x="54" y="62.5" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="IR">
 <contactref element="IC1" pad="12"/>
@@ -2459,7 +2464,7 @@ design rules under a new name.</description>
 <contactref element="L1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <polygon width="0.254" layer="1" rank="3">
-<vertex x="34.15" y="60.85"/>
+<vertex x="34.2" y="60.85"/>
 <vertex x="37.2" y="60.85"/>
 <vertex x="37.15" y="66.3"/>
 <vertex x="39.4" y="66.3"/>
@@ -2469,8 +2474,8 @@ design rules under a new name.</description>
 <vertex x="43.25" y="58.65"/>
 <vertex x="43.35" y="61.3"/>
 <vertex x="42.1" y="61.3"/>
-<vertex x="42.15" y="67.25"/>
-<vertex x="34.15" y="67.4"/>
+<vertex x="42.1" y="69.5"/>
+<vertex x="34.2" y="69.95"/>
 </polygon>
 <contactref element="J1" pad="2"/>
 <wire x1="35" y1="61" x2="35" y2="60" width="0.254" layer="1"/>
@@ -2485,7 +2490,12 @@ design rules under a new name.</description>
 <wire x1="41.05" y1="61.5" x2="41.05" y2="61.6" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
-<wire x1="42.05" y1="61.95" x2="42.05" y2="61" width="0.254" layer="1"/>
+</signal>
+<signal name="N$10">
+<wire x1="42" y1="61.2" x2="42" y2="62.05" width="0.254" layer="1"/>
+</signal>
+<signal name="N$11">
+<wire x1="56" y1="65.85" x2="57.4" y2="65.85" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <errors>

@@ -8783,6 +8783,11 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="L1" library="juliano" deviceset="L-EU" device="" value="4.7 uH"/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="510 K"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1.02 M"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="604 K"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="4.7 uF"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8832,6 +8837,11 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="L1" gate="G$1" x="-58.42" y="147.32" rot="R90"/>
 <instance part="Q3" gate="G$1" x="-10.16" y="134.62" rot="MR90"/>
 <instance part="R7" gate="G$1" x="-17.78" y="127" rot="R180"/>
+<instance part="R8" gate="G$1" x="2.54" y="129.54" rot="R270"/>
+<instance part="R9" gate="G$1" x="2.54" y="114.3" rot="R270"/>
+<instance part="C3" gate="G$1" x="10.16" y="132.08"/>
+<instance part="GND9" gate="1" x="10.16" y="121.92"/>
+<instance part="P+6" gate="VCC" x="10.16" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -8923,6 +8933,17 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="76.2" y1="175.26" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="10.16" y1="137.16" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="134.62" x2="2.54" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
+<junction x="10.16" y="134.62"/>
+<junction x="2.54" y="134.62"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -8974,6 +8995,14 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <junction x="-43.18" y="106.68"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <junction x="-71.12" y="127"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="109.22" x2="2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="106.68" x2="-43.18" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="10.16" y1="124.46" x2="10.16" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSOROUT" class="0">
@@ -9130,6 +9159,18 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="-12.7" y1="127" x2="-10.16" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="124.46" x2="2.54" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="FB"/>
+<wire x1="2.54" y1="121.92" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="124.46" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="121.92" x2="2.54" y2="121.92" width="0.1524" layer="91"/>
+<junction x="2.54" y="121.92"/>
 </segment>
 </net>
 </nets>
