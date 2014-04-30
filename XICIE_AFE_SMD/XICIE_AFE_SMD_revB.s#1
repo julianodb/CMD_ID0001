@@ -13120,8 +13120,8 @@ Based on the following sources:
 <instance part="C15" gate="G$1" x="109.22" y="185.42"/>
 <instance part="GND21" gate="1" x="96.52" y="177.8"/>
 <instance part="GND22" gate="1" x="109.22" y="177.8"/>
-<instance part="C16" gate="G$1" x="119.38" y="147.32"/>
-<instance part="GND23" gate="1" x="119.38" y="139.7"/>
+<instance part="C16" gate="G$1" x="101.6" y="147.32"/>
+<instance part="GND23" gate="1" x="101.6" y="139.7"/>
 <instance part="C17" gate="G$1" x="71.12" y="99.06"/>
 <instance part="GND24" gate="1" x="71.12" y="91.44"/>
 </instances>
@@ -13902,17 +13902,11 @@ Based on the following sources:
 <wire x1="-81.28" y1="157.48" x2="-71.12" y2="157.48" width="0.1524" layer="91"/>
 <label x="-73.66" y="157.48" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="P0.4"/>
-<wire x1="93.98" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
-<label x="99.06" y="137.16" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$10" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCCD"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="149.86" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="149.86" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
