@@ -13027,7 +13027,7 @@ Based on the following sources:
 <part name="C7" library="rcl" deviceset="C-EU" device="C0402" value="1 uF"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="2.2 uF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="4.7 uF"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="150K"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="390K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -13096,11 +13096,11 @@ Based on the following sources:
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="CMOD" library="rcl" deviceset="C-EU" device="C0402" value="4700 pF"/>
 <part name="CSH_TANK" library="rcl" deviceset="C-EU" device="C0402" value="4700 pF"/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="GND33" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13132,7 +13132,7 @@ Based on the following sources:
 <text x="-88.9" y="17.78" size="1.778" layer="91">D0</text>
 <text x="-88.9" y="20.32" size="1.778" layer="91">D1</text>
 <text x="-88.9" y="22.86" size="1.778" layer="91">D2</text>
-<text x="55.88" y="25.4" size="1.778" layer="91" rot="R90">&gt;= 64 K</text>
+<text x="55.88" y="25.4" size="1.778" layer="91" rot="R90">&gt;= 264 K</text>
 <text x="96.52" y="203.2" size="1.778" layer="91" rot="R90">[1k , 10k]</text>
 <text x="27.94" y="203.2" size="1.778" layer="91" rot="R90">[1k , 10k]</text>
 <text x="2.54" y="96.52" size="1.778" layer="91">range of ADC</text>
@@ -13142,7 +13142,6 @@ Based on the following sources:
 <circle x="22.86" y="187.96" radius="3.5921" width="0.1524" layer="91"/>
 <text x="83.82" y="101.6" size="1.778" layer="91">2.2 nF ideal</text>
 <text x="101.6" y="121.92" size="1.778" layer="91">10 nF ideal</text>
-<text x="-88.9" y="10.16" size="1.778" layer="91">D/C#</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="10.16" y="86.36" rot="R270"/>
@@ -13282,11 +13281,11 @@ Based on the following sources:
 <instance part="GND27" gate="1" x="106.68" y="73.66"/>
 <instance part="GND28" gate="1" x="88.9" y="86.36"/>
 <instance part="GND29" gate="1" x="-53.34" y="5.08"/>
+<instance part="GND30" gate="1" x="-50.8" y="7.62"/>
 <instance part="CMOD" gate="G$1" x="83.82" y="99.06" rot="R180"/>
 <instance part="CSH_TANK" gate="G$1" x="99.06" y="119.38" rot="R180"/>
 <instance part="GND31" gate="1" x="83.82" y="91.44"/>
 <instance part="GND32" gate="1" x="93.98" y="114.3"/>
-<instance part="GND33" gate="1" x="-48.26" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -13634,13 +13633,6 @@ Based on the following sources:
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="99.06" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="-91.44" y1="10.16" x2="-63.5" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$15" pin="1"/>
-<wire x1="-63.5" y1="10.16" x2="-63.5" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="-63.5" y1="12.7" x2="-48.26" y2="12.7" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="SENSOROUT" class="0">
 <segment>
@@ -13821,16 +13813,20 @@ Based on the following sources:
 <pinref part="U$2" gate="G$16" pin="1"/>
 </segment>
 </net>
+<net name="D/C#" class="0">
+<segment>
+<wire x1="-91.44" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
+<label x="-88.9" y="10.16" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$15" pin="1"/>
+</segment>
+</net>
 <net name="RES#" class="0">
 <segment>
 <wire x1="-91.44" y1="7.62" x2="-60.96" y2="7.62" width="0.1524" layer="91"/>
 <label x="-88.9" y="7.62" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$14" pin="1"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="P2.7"/>
-<wire x1="38.1" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
-<label x="15.24" y="129.54" size="1.778" layer="95"/>
+<wire x1="-60.96" y1="7.62" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C2P" class="0">
